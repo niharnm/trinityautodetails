@@ -42,7 +42,7 @@ const observer = new IntersectionObserver(
 
 revealNodes.forEach((node) => observer.observe(node));
 
-const bookingRecipient = "nihar.manchikalapudi@gmail.com";
+const bookingRecipient = "rayalnadan830@gmail.com,sa.shauryaarora@gmail.com";
 
 function pad(value) {
   return String(value).padStart(2, "0");
