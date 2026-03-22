@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#48d7ff" />
+      <stop offset="55%" stop-color="#64a4ff" />
+      <stop offset="100%" stop-color="#5cf0d4" />
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78f3ff" />
+      <stop offset="50%" stop-color="#7db1ff" />
+      <stop offset="100%" stop-color="#b7f46a" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="800" rx="400" fill="#07111f" />
+  <circle cx="400" cy="400" r="338" fill="#07111f" stroke="#0d1a33" stroke-width="8" />
+  <path d="M400 108 620 202v134c0 148-88 255-220 332C268 591 180 484 180 336V202z" fill="none" stroke="url(#shield)" stroke-width="14" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M400 144 587 224v111c0 127-72 218-187 290C285 553 213 462 213 335V224z" fill="none" stroke="#316ddf" stroke-width="8" opacity="0.9"/>
+  <path d="M230 408c58-45 122-68 194-68 62 0 118 15 161 39-30 1-66 10-97 29-68 43-172 44-258 0z" fill="none" stroke="#7af7d0" stroke-width="10" stroke-linecap="round"/>
+  <path d="M251 430c56-38 110-56 178-56 66 0 129 18 176 49" fill="none" stroke="#5dc4ff" stroke-width="6" opacity="0.9" stroke-linecap="round"/>
+  <path d="M278 438c60 24 126 30 194 20 38-5 74-15 106-29" fill="none" stroke="#b8f46d" stroke-width="5" opacity="0.8" stroke-linecap="round"/>
+  <path d="M251 448c32-60 95-101 171-101 42 0 79 13 114 34 22 13 41 31 54 52" fill="none" stroke="#10182e" stroke-width="17" stroke-linecap="round"/>
+  <circle cx="263" cy="447" r="24" fill="none" stroke="url(#neon)" stroke-width="6"/>
+  <circle cx="263" cy="447" r="7" fill="#b7f46a"/>
+  <circle cx="540" cy="447" r="24" fill="none" stroke="url(#neon)" stroke-width="6"/>
+  <circle cx="540" cy="447" r="7" fill="#b7f46a"/>
+  <path d="M498 258c8-20 25-32 44-32 24 0 43 19 43 43s-19 43-43 43c-19 0-36-12-44-31h-30" fill="none" stroke="#ffd860" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="544" cy="246" rx="52" ry="15" fill="none" stroke="#ffd860" stroke-width="8"/>
+  <path d="M622 270c19 2 31 8 38 20" fill="none" stroke="#7af7d0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M658 278c12 4 19 10 25 21" fill="none" stroke="#7af7d0" stroke-width="4" stroke-linecap="round"/>
+  <path d="m232 248 10 28 29 1-23 17 8 28-24-16-24 16 8-28-23-17 29-1z" fill="#ffe765" opacity="0.95"/>
+  <path d="m323 204 9 24 25 1-20 15 7 24-21-14-21 14 7-24-20-15 25-1z" fill="#c6f76f" opacity="0.95"/>
+  <path d="m402 238 9 24 25 1-20 15 7 24-21-14-21 14 7-24-20-15 25-1z" fill="#ffe765" opacity="0.95"/>
+  <path d="m315 620 12 31 32 1-25 18 9 31-28-18-27 18 9-31-26-18 33-1z" fill="#c6f76f" opacity="0.95"/>
+  <text x="400" y="585" text-anchor="middle" fill="url(#neon)" font-size="55" font-family="Arial, sans-serif" letter-spacing="6" font-weight="700">TRINITY AUTO DETAIL</text>
+</svg>
