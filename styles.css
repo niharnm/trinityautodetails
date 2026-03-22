@@ -438,6 +438,13 @@ img {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.comparison-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
 .process-steps {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -449,6 +456,7 @@ img {
 .service-card,
 .pricing-card,
 .value-card,
+.comparison-card,
 .process-card,
 .showcase-card {
   padding: 24px;
@@ -543,6 +551,58 @@ img {
   background: linear-gradient(135deg, rgba(83, 216, 255, 0.1), rgba(106, 141, 255, 0.06), rgba(193, 245, 108, 0.04));
   filter: blur(2px);
   z-index: -1;
+}
+
+.comparison-card {
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.comparison-card-negative {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+}
+
+.comparison-card-positive {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03)),
+    linear-gradient(135deg, rgba(83, 216, 255, 0.12), rgba(106, 141, 255, 0.08), rgba(193, 245, 108, 0.05));
+}
+
+.comparison-label {
+  margin: 0 0 16px;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.comparison-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.comparison-card li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.comparison-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-lime));
 }
 
 .faq-list {
@@ -788,6 +848,7 @@ img {
   .booking-layout,
   .form-grid,
   .value-grid,
+  .comparison-strip,
   .process-steps,
   .showcase-grid {
     grid-template-columns: 1fr;
