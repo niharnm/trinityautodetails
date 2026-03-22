@@ -134,13 +134,14 @@ if (bookingForm) {
     const name = String(formData.get("name") || "").trim();
     const email = String(formData.get("email") || "").trim();
     const phone = String(formData.get("phone") || "").trim();
+    const address = String(formData.get("address") || "").trim();
     const vehicleType = String(formData.get("vehicleType") || "").trim();
     const packageType = String(formData.get("package") || "").trim();
     const date = String(formData.get("date") || "").trim();
     const time = String(formData.get("time") || "").trim();
     const notes = String(formData.get("notes") || "").trim();
 
-    if (!name || !email || !phone || !vehicleType || !packageType || !date || !time) {
+    if (!name || !email || !phone || !address || !vehicleType || !packageType || !date || !time) {
       setFeedback("Fill out every required field before sending the booking email.", "is-error");
       return;
     }
@@ -161,6 +162,7 @@ if (bookingForm) {
         `Name: ${name}`,
         `Email: ${email}`,
         `Phone: ${phone}`,
+        `Address: ${address}`,
         `Vehicle Type: ${vehicleType}`,
         `Package: ${packageType}`,
         `Preferred Date: ${date}`,

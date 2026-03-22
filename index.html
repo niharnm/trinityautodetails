@@ -286,6 +286,16 @@
                   <input type="tel" name="phone" autocomplete="tel" required />
                 </label>
                 <label>
+                  <span>Address</span>
+                  <input
+                    type="text"
+                    name="address"
+                    autocomplete="street-address"
+                    placeholder="Street address or service location"
+                    required
+                  />
+                </label>
+                <label>
                   <span>Vehicle Type</span>
                   <select name="vehicleType" required>
                     <option value="">Select one</option>
@@ -318,7 +328,7 @@
                   <textarea
                     name="notes"
                     rows="5"
-                    placeholder="Add vehicle condition, address area, stains, pet hair, or anything that affects the quote."
+                    placeholder="Add vehicle condition, stains, pet hair, gate codes, or anything that affects the quote."
                   ></textarea>
                 </label>
               </div>
