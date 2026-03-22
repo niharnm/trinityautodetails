@@ -155,8 +155,8 @@ img {
   grid-template-columns: 1.15fr 0.85fr;
   gap: 34px;
   align-items: center;
-  min-height: calc(100svh - 120px);
-  padding: 56px 0 40px;
+  min-height: calc(100svh - 180px);
+  padding: 24px 0 40px;
 }
 
 .eyebrow {
@@ -856,7 +856,7 @@ img {
 
   .hero {
     min-height: auto;
-    padding-top: 42px;
+    padding-top: 18px;
   }
 }
 
