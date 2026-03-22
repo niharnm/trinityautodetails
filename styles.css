@@ -608,6 +608,21 @@ img {
   line-height: 1.7;
 }
 
+.booking-social {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.booking-social a {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 4px;
+  color: var(--accent-soft);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
 .booking-form {
   padding: 24px;
 }
