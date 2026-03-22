@@ -45,8 +45,9 @@
           <a href="#services">Services</a>
           <a href="#why-us">Why Us</a>
           <a href="#process">Process</a>
+          <a href="#book">Book</a>
           <a href="#faq">FAQ</a>
-          <a class="nav-cta" href="https://www.instagram.com/trinityautodetails/" target="_blank" rel="noreferrer">
+          <a class="nav-cta" href="#book">
             Book Now
           </a>
         </nav>
@@ -64,14 +65,7 @@
             </p>
 
             <div class="hero-actions">
-              <a
-                class="button button-primary"
-                href="https://www.instagram.com/trinityautodetails/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Message on Instagram
-              </a>
+              <a class="button button-primary" href="#book">Book Now</a>
               <a class="button button-secondary" href="#services">View Services</a>
             </div>
 
@@ -207,8 +201,8 @@
             <article class="value-card reveal">
               <h3>Direct booking path</h3>
               <p>
-                Every major CTA points straight to Instagram DM, which matches the only confirmed
-                live contact channel today.
+                The site now supports structured booking through the built-in form while still
+                keeping Instagram available as a secondary contact path.
               </p>
             </article>
             <article class="value-card reveal">
@@ -230,19 +224,106 @@
           <div class="process-steps">
             <article class="process-card reveal">
               <span>Step 1</span>
-              <h3>Send a DM</h3>
-              <p>Reach out on Instagram with your vehicle type, condition, and what you need done.</p>
+              <h3>Fill out the form</h3>
+              <p>Choose your package, date, and available time slot, then send the booking details.</p>
             </article>
             <article class="process-card reveal">
               <span>Step 2</span>
-              <h3>Get a quote</h3>
-              <p>Package fit, timing, and availability can be confirmed directly in one conversation.</p>
+              <h3>Email opens instantly</h3>
+              <p>Your booking information is packaged into a ready-to-send email addressed to the shop.</p>
             </article>
             <article class="process-card reveal">
               <span>Step 3</span>
-              <h3>Show up clean</h3>
-              <p>The goal is a finish that feels better to drive, photograph, and hand over the keys for.</p>
+              <h3>Confirm the appointment</h3>
+              <p>The final step is confirming details, condition, and any travel fee before the service date.</p>
             </article>
+          </div>
+        </section>
+
+        <section class="section booking-section" id="book">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Book Now</p>
+            <h2>Choose a day, pick an available slot, and send the booking in one step.</h2>
+            <p>
+              Monday through Friday bookings are available from 4:00 PM to 6:00 PM. Saturday and
+              Sunday bookings are available from 9:00 AM to 4:00 PM.
+            </p>
+          </div>
+
+          <div class="booking-layout">
+            <article class="booking-panel reveal">
+              <p class="pricing-label">Hours</p>
+              <ul class="booking-hours">
+                <li><span>Monday - Friday</span><strong>4:00 PM - 6:00 PM</strong></li>
+                <li><span>Saturday - Sunday</span><strong>9:00 AM - 4:00 PM</strong></li>
+              </ul>
+              <p class="booking-side-note">
+                After you submit, the site opens a prefilled email addressed to
+                <strong>nihar.manchikalapudi@gmail.com</strong> with all booking details included.
+              </p>
+            </article>
+
+            <form class="booking-form reveal" id="booking-form">
+              <div class="form-grid">
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" autocomplete="name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="email" required />
+                </label>
+                <label>
+                  <span>Phone</span>
+                  <input type="tel" name="phone" autocomplete="tel" required />
+                </label>
+                <label>
+                  <span>Vehicle Type</span>
+                  <select name="vehicleType" required>
+                    <option value="">Select one</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Truck">Truck</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Package</span>
+                  <select name="package" required>
+                    <option value="">Select one</option>
+                    <option value="Interior Detail">Interior Detail</option>
+                    <option value="Exterior Detail">Exterior Detail</option>
+                    <option value="Full Package">Full Package</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Preferred Date</span>
+                  <input type="date" name="date" id="booking-date" required />
+                </label>
+                <label class="full-width">
+                  <span>Available Time</span>
+                  <select name="time" id="booking-time" required disabled>
+                    <option value="">Select a date first</option>
+                  </select>
+                </label>
+                <label class="full-width">
+                  <span>Vehicle Condition / Notes</span>
+                  <textarea
+                    name="notes"
+                    rows="5"
+                    placeholder="Add vehicle condition, address area, stains, pet hair, or anything that affects the quote."
+                  ></textarea>
+                </label>
+              </div>
+
+              <p class="booking-disclaimer">
+                Final pricing may vary based on vehicle condition, and a travel fee may apply.
+              </p>
+              <p class="booking-feedback" id="booking-feedback" aria-live="polite"></p>
+
+              <button class="button button-primary booking-submit" type="submit">
+                Send Booking Email
+              </button>
+            </form>
           </div>
         </section>
 
@@ -282,8 +363,8 @@
             <details class="faq-item reveal">
               <summary>How do I book?</summary>
               <p>
-                Use the Instagram buttons on the site. DM is the confirmed live contact method for
-                Trinity Auto Detail right now.
+                Use the booking form on the page to choose a date and available time, then send the
+                generated email. Instagram is still available for direct messages as well.
               </p>
             </details>
             <details class="faq-item reveal">
@@ -307,16 +388,20 @@
           <p class="eyebrow">Ready To Book</p>
           <h2>Give Trinity Auto Detail a vehicle worth showing off.</h2>
           <p>
-            For quotes, availability, or package questions, message the shop directly on Instagram.
+            For quotes, availability, or package questions, use the booking form or message the shop
+            directly on Instagram.
           </p>
-          <a
-            class="button button-primary"
-            href="https://www.instagram.com/trinityautodetails/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open Instagram
-          </a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#book">Open Booking Form</a>
+            <a
+              class="button button-secondary"
+              href="https://www.instagram.com/trinityautodetails/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open Instagram
+            </a>
+          </div>
         </section>
       </main>
 
